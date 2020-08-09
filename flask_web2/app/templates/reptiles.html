@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="" method="post" style="width:1000px;height:1000px;" >
+         {{ form.hidden_tag() }}
+	 <p>
+            {{ form.book_name.label }}<br>
+            {{ form.book_name(cols=150, rows=2) }}<br>
+            {% for error in form.book_name.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+       </p>
+	
+        <p>
+            {{ form.html.label }}<br>
+            {{ form.html(cols=150, rows=2) }}<br>
+	    {% for error in form.html.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+       </p>
+	 <p>{{ form.submit() }}</p>
+</form>
+</body>
+</html>

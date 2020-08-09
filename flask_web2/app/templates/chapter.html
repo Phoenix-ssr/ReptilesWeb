@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="" method="post" style="width:1000px;height:500px;" >
+         {{ form.hidden_tag() }}
+
+        <p>
+            {{ form.chapter_main.label }}<br>
+            {{ form.chapter_main(cols=150, rows=2) }}<br>
+            {% for error in form.chapter_main.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+       </p>
+        <p>
+            {{ form.chapter_all.label }}<br>
+            {{ form.chapter_all(cols=150, rows=2) }}<br>
+            {% for error in form.chapter_all.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+       </p>
+	<p>
+            {{ form.chapter_content.label }}<br>
+            {{ form.chapter_content(cols=150, rows=2) }}<br>
+            {% for error in form.chapter_content.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+       </p>
+         <p>{{ form.submit() }}</p>
+</form>
+<p>test{{show}}</p>
+</body>
+</html>
+
