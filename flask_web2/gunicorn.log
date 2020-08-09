@@ -1,0 +1,103 @@
+2020-08-09 16:32:33 [2221] [INFO] Starting gunicorn 0.14.0
+2020-08-09 16:32:33 [2221] [INFO] Listening at: http://0.0.0.0:5000 (2221)
+2020-08-09 16:32:33 [2221] [INFO] Using worker: sync
+2020-08-09 16:32:33 [2224] [INFO] Booting worker with pid: 2224
+2020-08-09 16:32:33 [2225] [INFO] Booting worker with pid: 2225
+2020-08-09 16:32:33 [2226] [INFO] Booting worker with pid: 2226
+2020-08-09 16:32:33 [2227] [INFO] Booting worker with pid: 2227
+2020-08-09 16:32:35 [2227] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 453, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 101, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 24, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 279, in import_app
+    __import__(module)
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/web.py", line 1, in <module>
+    from app import app
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/app/__init__.py", line 10, in <module>
+    from app import routes,models
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/app/routes.py", line 11, in <module>
+    from concurrent.futures import ThreadPoolExecutor#异步
+ImportError: No module named concurrent.futures
+2020-08-09 16:32:35 [2227] [INFO] Worker exiting (pid: 2227)
+2020-08-09 16:32:35 [2224] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 453, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 101, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 24, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 279, in import_app
+    __import__(module)
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/web.py", line 1, in <module>
+    from app import app
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/app/__init__.py", line 10, in <module>
+    from app import routes,models
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/app/routes.py", line 11, in <module>
+    from concurrent.futures import ThreadPoolExecutor#异步
+ImportError: No module named concurrent.futures
+2020-08-09 16:32:35 [2224] [INFO] Worker exiting (pid: 2224)
+2020-08-09 16:32:35 [2226] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 453, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 101, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 24, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 279, in import_app
+    __import__(module)
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/web.py", line 1, in <module>
+    from app import app
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/app/__init__.py", line 10, in <module>
+    from app import routes,models
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/app/routes.py", line 11, in <module>
+    from concurrent.futures import ThreadPoolExecutor#异步
+ImportError: No module named concurrent.futures
+2020-08-09 16:32:35 [2226] [INFO] Worker exiting (pid: 2226)
+2020-08-09 16:32:35 [2225] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 453, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 101, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 24, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/site-packages/gunicorn/util.py", line 279, in import_app
+    __import__(module)
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/web.py", line 1, in <module>
+    from app import app
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/app/__init__.py", line 10, in <module>
+    from app import routes,models
+  File "/home/zhangwenjie/ReptilesWeb/flask_web2/app/routes.py", line 11, in <module>
+    from concurrent.futures import ThreadPoolExecutor#异步
+ImportError: No module named concurrent.futures
+2020-08-09 16:32:35 [2225] [INFO] Worker exiting (pid: 2225)
+Traceback (most recent call last):
+  File "/usr/bin/gunicorn", line 8, in <module>
+    sys.exit(run())
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 32, in run
+    WSGIApplication("%prog [OPTIONS] APP_MODULE").run()
+  File "/usr/lib/python2.7/site-packages/gunicorn/app/base.py", line 129, in run
+    Arbiter(self).run()
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 184, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 279, in halt
+    self.stop()
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 327, in stop
+    self.reap_workers()
+  File "/usr/lib/python2.7/site-packages/gunicorn/arbiter.py", line 413, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>

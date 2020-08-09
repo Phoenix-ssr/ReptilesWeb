@@ -1,0 +1,8 @@
+gunicorn
+gevent
+flask
+flask-sqlalchemy
+flask-migrate
+pymysql
+flask-wtf
+requests
